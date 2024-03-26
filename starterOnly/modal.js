@@ -19,6 +19,7 @@ modalCloseBtn.forEach((ele) => ele.addEventListener("click", closeModal));
 
 // launch modal form
 function launchModal() {
+  window.scrollTo({ top: 0 });
   modalbg.style.display = "block";
 }
 
@@ -48,6 +49,9 @@ function validForm() {
   var modal = document.querySelector(".modal-body")
   var height = modal.clientHeight
   document.getElementById("form").style.display = "none"
-  modal.style.height = height + "px"
-  document.querySelector(".thanks").style.display = "flex"
+  if (window.innerWidth > 768) {
+    modal.style.height = height + "px"
+  }
+  var thanks = document.querySelector(".thanks")
+  thanks.style.display = "flex"
 }

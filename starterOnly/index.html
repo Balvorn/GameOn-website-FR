@@ -57,28 +57,28 @@
         <div class="modal-body">
           <div class="thanks">
             <div>Merci pour votre inscription</div>
-            <input class="btn close" value="Fermer" />
+            <button class="btn close">Fermer</button>
           </div>
           <form novalidate id="form" name="reserve" action="index.html" onsubmit="validate(event);">
             <div class="formData" data-error="Veuillez entrer votre prénom">
-              <label>Prénom</label><br>
+              <label for="first">Prénom</label><br>
               <input class="text-control" type="text" id="first" name="first" minlength="2" required /><br>
             </div>
             <div class="formData" data-error="Veuillez entrer votre nom">
-              <label>Nom</label><br>
+              <label for="last">Nom</label><br>
               <input class="text-control" type="text" id="last" name="last" minlength="2" required /><br>
             </div>
             <div class="formData" data-error="Veuillez entrer un email valide">
-              <label>E-mail</label><br>
+              <label for="email">E-mail</label><br>
               <input class="text-control" type="email" id="email" name="email" pattern="[\-\w\.]+@([\w]+\.)+[\w]{2,4}"
                 required /><br>
             </div>
             <div class="formData" data-error="Veuillez sélectionner votre date de naissance">
-              <label>Date de naissance</label><br>
-              <input class="text-control" type="date" id="birthdate" name="birthdate" required /><br>
+              <label for="birthdate">Date de naissance</label><br>
+              <input class="text-control" type="date" id="birthdate" name="birthdate" min="1900-01-01" required /><br>
             </div>
             <div class="formData" data-error="Veuillez indiquer un nombre entre 0 et 99">
-              <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
+              <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
               <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" value="0"
                 required>
             </div>
