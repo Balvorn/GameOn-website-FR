@@ -162,7 +162,8 @@ main {
   padding: 30px 8%;
   margin: 0 auto;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
+  min-height: 100%;
 }
 
 label {
@@ -519,7 +520,6 @@ footer {
     font-size: 14px;
     margin-top: 20px;
     word-wrap: normal;
-    min-width: none;
   }
 
   .hero-img img {
@@ -631,9 +631,9 @@ footer {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     height: calc(100vh - 97px);
-    overflow: scroll;
   }
-  .modal-body{
+
+  .modal-body {
     min-height: 100%;
   }
 

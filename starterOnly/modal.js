@@ -43,14 +43,13 @@ function validate(e) {
     validForm()
   }
 }
-
 //
 function validForm() {
   var modal = document.querySelector(".modal-body")
   var height = modal.clientHeight
   document.getElementById("form").style.display = "none"
   if (window.innerWidth > 768) {
-    modal.style.height = height + "px"
+   modal.style.height = height + "px"
   }
   var thanks = document.querySelector(".thanks")
   thanks.style.display = "flex"
